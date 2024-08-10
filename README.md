@@ -156,6 +156,17 @@ Serves a static file to the client.
 - **filePath**: The path to the file that should be served to the client.
 
 
+## Contributing
+
+If you would like to contribute to OJParty, please fork the repository and submit a pull request.
+
+## License
+
+OJParty is licensed under the MIT License.
+
+
+
+
 
 
 
