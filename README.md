@@ -158,7 +158,7 @@ Serves a static file to the client.
 
 ### Middleware: `form.forms(req, callback)`
 
-The `form.forms` middleware is used to parse and extract data from incoming requests, including the body, query parameters, and uploaded files. It processes the request and provides the parsed data to the callback function.
+The `ojparty.forms` middleware is used to parse and extract data from incoming requests, including the body, query parameters, and uploaded files. It processes the request and provides the parsed data to the callback function.
 
 #### Usage Example
 
