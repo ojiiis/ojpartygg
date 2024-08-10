@@ -1,6 +1,6 @@
 # OJParty
 
-OJParty is a lightweight Node.js framework that functions similarly to Express.js but includes additional features like session management and file upload handling. It's designed to provide a more integrated experience for developers who need these features out of the box.
+OJParty is a lightweight Node.js framework that functions similarly to Express.js but includes addgitional features like session management and file upload handling. It's designed to provide a more integrated experience for developers who need these features out of the box.
 
 ## Features
 
@@ -98,6 +98,20 @@ Handles POST requests to the specified path.
 - **path**: The route path.
 - **callback**: Function to handle the request and response objects.
 
+### `app.delete(path, callback)`
+
+Handles DELETE requests to the specified path.
+
+- **path**: The route path.
+- **callback**: Function to handle the request and response objects.
+
+### `app.options(path, callback)`
+
+Handles OPTIONS requests to the specified path.
+
+- **path**: The route path.
+- **callback**: Function to handle the request and response objects.
+
 ### `req.setSession(key, value)`
 
 Sets a session value.
@@ -120,20 +134,6 @@ Unsets a session value.
 An object containing all uploaded files.
 
 
-### `app.delete(path, callback)`
-
-Handles DELETE requests to the specified path.
-
-- **path**: The route path.
-- **callback**: Function to handle the request and response objects.
-
-### `app.options(path, callback)`
-
-Handles OPTIONS requests to the specified path.
-
-- **path**: The route path.
-- **callback**: Function to handle the request and response objects.
-
 ### `res.send(data)`
 
 Sends a response to the client with the specified data.
@@ -145,3 +145,8 @@ Sends a response to the client with the specified data.
 Serves a static file to the client.
 
 - **filePath**: The path to the file that should be served to the client.
+
+
+
+
+
