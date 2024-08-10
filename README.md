@@ -15,7 +15,9 @@ To install OJParty, use npm:
 ```bash
 npm install ojparty
 ```
+## Basic Usage
 
+Below is an example of how to use OJParty to create a simple server with session management and file upload capabilities.
 ```javascript
 const ojp = require("ojparty");
 
