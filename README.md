@@ -133,6 +133,15 @@ Unsets a session value.
 
 An object containing all uploaded files.
 
+### `req.body`
+
+An object containing all form request params.
+
+### `req.query`
+
+An object containing all request url params.
+
+
 
 ### `res.send(data)`
 
