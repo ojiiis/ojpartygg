@@ -189,7 +189,7 @@ const serve = http.createServer((req, res) => {
 serve.listen(301);
 ```
 
-```markdown
+
 #### Output Structure
 
 - **body**: 
@@ -238,7 +238,7 @@ serve.listen(301);
       }
     ]
     ```
-```
+
 
 ## Contributing
 
