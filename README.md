@@ -189,6 +189,56 @@ const serve = http.createServer((req, res) => {
 serve.listen(301);
 ```
 
+```markdown
+#### Output Structure
+
+- **body**: 
+  - An object containing key-value pairs from the parsed body of the request.
+  - Example:
+    ```json
+    {
+      "key1": "value1",
+      "key2": "value2"
+    }
+    ```
+
+- **query**: 
+  - An object containing key-value pairs from the parsed query string of the URL.
+  - Example:
+    ```json
+    {
+      "param1": "value1",
+      "param2": "value2"
+    }
+    ```
+
+- **url**: 
+  - The URL string without the query parameters.
+  - Example:
+    ```text
+    "/example/path"
+    ```
+
+- **files**: 
+  - An array containing information about uploaded files, where each file is represented by an object.
+  - Example:
+    ```json
+    [
+      {
+        "size": 1024,
+        "fileName": "example.txt",
+        "contentType": "text/plain",
+        "data": "<file data>"
+      },
+      {
+        "size": 2048,
+        "fileName": "image.png",
+        "contentType": "image/png",
+        "data": "<file data>"
+      }
+    ]
+    ```
+```
 
 ## Contributing
 
