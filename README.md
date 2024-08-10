@@ -156,7 +156,7 @@ Serves a static file to the client.
 - **filePath**: The path to the file that should be served to the client.
 
 
-### Middleware: `form.forms(req, callback)`
+### Middleware: `ojparty.forms(req, callback)`
 
 The `ojparty.forms` middleware is used to parse and extract data from incoming requests, including the body, query parameters, and uploaded files. It processes the request and provides the parsed data to the callback function.
 
