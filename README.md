@@ -119,11 +119,29 @@ Unsets a session value.
 
 An object containing all uploaded files.
 
-## Contributing
 
-If you would like to contribute to OJParty, please fork the repository and submit a pull request.
+### `app.delete(path, callback)`
 
-## License
+Handles DELETE requests to the specified path.
 
-OJParty is licensed under the MIT License.
+- **path**: The route path.
+- **callback**: Function to handle the request and response objects.
 
+### `app.options(path, callback)`
+
+Handles OPTIONS requests to the specified path.
+
+- **path**: The route path.
+- **callback**: Function to handle the request and response objects.
+
+### `res.send(data)`
+
+Sends a response to the client with the specified data.
+
+- **data**: The data to send to the client. This can be a string, object, or buffer.
+
+### `res.sendFile(filePath)`
+
+Serves a static file to the client.
+
+- **filePath**: The path to the file that should be served to the client.
