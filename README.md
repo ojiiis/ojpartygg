@@ -156,6 +156,40 @@ Serves a static file to the client.
 - **filePath**: The path to the file that should be served to the client.
 
 
+### Middleware: `form.forms(req, callback)`
+
+The `form.forms` middleware is used to parse and extract data from incoming requests, including the body, query parameters, and uploaded files. It processes the request and provides the parsed data to the callback function.
+
+#### Usage Example
+
+```javascript
+const ojp = require("ojparty");
+const http = require("http");
+
+const form = ojp.ojparty;
+
+const serve = http.createServer((req, res) => {
+    form.forms(req, (body) => {
+        console.log(body);
+        /*
+        Output:
+        {
+          body: { key: value, key: value },
+          query: { key: value, key: value },
+          url: "url string without query",
+          files: [
+            0: { filedata },   
+            1: { filedata }
+          ]
+        }
+        */
+    });
+});
+
+serve.listen(301);
+```
+
+
 ## Contributing
 
 If you would like to contribute to OJParty, please fork the repository and submit a pull request.
