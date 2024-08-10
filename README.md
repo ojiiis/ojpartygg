@@ -80,3 +80,50 @@ app.listen(210, () => {
 });
 
 ```
+
+
+## API Reference
+
+### `app.get(path, callback)`
+
+Handles GET requests to the specified path.
+
+- **path**: The route path.
+- **callback**: Function to handle the request and response objects.
+
+### `app.post(path, callback)`
+
+Handles POST requests to the specified path.
+
+- **path**: The route path.
+- **callback**: Function to handle the request and response objects.
+
+### `req.setSession(key, value)`
+
+Sets a session value.
+
+- **key**: The session key.
+- **value**: The value to store in the session.
+
+### `req.session`
+
+An object that contains all active sessions.
+
+### `req.unsetSession(key)`
+
+Unsets a session value.
+
+- **key**: The session key to remove.
+
+### `req.files`
+
+An object containing all uploaded files.
+
+## Contributing
+
+If you would like to contribute to OJParty, please fork the repository and submit a pull request.
+
+## License
+
+OJParty is licensed under the MIT License.
+
